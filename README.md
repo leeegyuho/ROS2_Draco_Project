@@ -31,10 +31,12 @@ ros2 run point_cloud_transport republish --ros-args \
   -p out_transport:=draco
 
 토픽	방향	설명
+
   /sensing/lidar/top/pointcloud	입력	Lidar에서 나오는 원본 PointCloud2
   pct/point_cloud	출력	Draco 압축 후 전송되는 PointCloud2
   
 파라미터	설명
+
   in_transport	입력 데이터 타입 (raw / draco 등)
   out_transport	출력 데이터 타입 (raw / draco 등)
 
