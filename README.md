@@ -30,22 +30,16 @@ ros2 run point_cloud_transport republish --ros-args \
   -p in_transport:=raw \
   -p out_transport:=draco
 
-
-토픽 설명
-
-토픽	방향	설명
-/sensing/lidar/top/pointcloud	입력	Lidar에서 나오는 원본 PointCloud2
-pct/point_cloud	출력	Draco 압축 후 전송되는 PointCloud2
-
-파라미터 설명
-
-파라미터	설명
-in_transport	입력 데이터 타입 (raw / draco 등)
-out_transport	출력 데이터 타입 (raw / draco 등)
+  토픽	방향	설명
+    /sensing/lidar/top/pointcloud	입력	Lidar에서 나오는 원본 PointCloud2
+    pct/point_cloud	출력	Draco 압축 후 전송되는 PointCloud2
+  파라미터	설명
+    in_transport	입력 데이터 타입 (raw / draco 등)
+    out_transport	출력 데이터 타입 (raw / draco 등)
 
 3. 압축 해제 및 동적 설정
 
-rqt → Plugin → Dynamic Reconfigure
+rqt → Plugin → configuration → Dynamic Reconfigure
 
 
 ![draco_plugin](https://github.com/user-attachments/assets/fc325915-9bb8-4f5a-802c-1a009c3da13f)
