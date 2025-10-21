@@ -102,7 +102,7 @@ ros2 run pointcloud_to_laserscan pointcloud_to_laserscan_node --ros-args \
 
 3D PointCloud2 → 2D LaserScan 변환
 
-SLAMToolbox 연동 가능
+SLAMToolbox 연동 가능 ( ros2 launch slampibot_gazebo spb_slamtoolbox.launch.py
 
 🔧 시스템 구조
 [ LiDAR Sensor ]
@@ -114,7 +114,7 @@ SLAMToolbox 연동 가능
 [ Draco Republish Node ]
        │
        ▼
-[ pct/point_cloud ] (draco)
+[ pct/point_cloud ] (draco : rqt dynamic reconfigure) 
        │
        ▼
 [ Draco Decompress Node / Subscriber ]
