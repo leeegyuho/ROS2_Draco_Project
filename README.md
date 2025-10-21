@@ -21,30 +21,7 @@ source install/setup.bash
 
 💡 실행 방법
 1. rosbag 파일 실행
-📦 rosbag2 정보
-(1). 기본 정보
-  항목	값
-  버전	5
-  스토리지	sqlite3
-  총 메시지 수	870
-  지속 시간	43.41초
-  압축	없음
-(2). 포함된 토픽
-  토픽 이름	메시지 타입	메시지 수	QoS 히스토리 / 깊이	신뢰성
-  /sensing/lidar/top/pointcloud_raw_ex	sensor_msgs/msg/PointCloud2	435	history: 1 / depth: 100	reliable
-  /sensing/lidar/top/pointcloud	sensor_msgs/msg/PointCloud2	435	history: 1 / depth: 10	best effort
-(3). 포함 파일
-  파일명	시작 시간 (epoch ns)	지속 시간 (ns)	메시지 수
-  rosbag2_2024_09_24-14_30_22_0.db3	1727155822969170507	43406166756	870
-(4). 요약
-
-  두 토픽 모두 메시지 수 435로 동일
-
-  압축되지 않은 상태이며, rosbag 재생 및 데이터 분석 가능
-
-  /pointcloud_raw_ex: 고품질 PointCloud2
-
-  /pointcloud: 일반 PointCloud2
+  ros2 bag play rosbag2_2024_09_24-14_28_57_0.db3 --clock
 
 2. Draco 압축 / 재전송 노드 실행
 ros2 run point_cloud_transport republish --ros-args \
