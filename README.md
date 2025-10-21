@@ -8,7 +8,8 @@ ROS2_Draco_Project는 ROS 2 환경에서 Google Draco를 활용하여 PointCloud
 
 의존성 설치
 
-sudo apt install ros-humble-point-cloud-transport \
+sudo apt install 
+                 ros-humble-point-cloud-transport \
                  ros-humble-draco-point-cloud-transport \
                  ros-humble-point-cloud-to-laserscan
 
