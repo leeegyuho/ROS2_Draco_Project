@@ -118,7 +118,8 @@ Draco 압축: PointCloud2 메시지를 효율적으로 압축
 📊 시각화 예시
 ![Visualization_3D_](https://github.com/user-attachments/assets/5b137056-bf18-41c9-ac1e-e78524877e41)![map_12](https://github.com/user-attachments/assets/2112ea18-0273-49f1-b10f-23645c0c7073)
 
-📄 라이선스
-
-이 프로젝트는 MIT 라이선스
-를 따릅니다.
+📄 참고자료 
+https://github.com/ros-perception/point_cloud_transport_tutorial.git
+https://github.com/ros-perception/pointcloud_to_laserscan.git
+https://github.com/ros-perception/point_cloud_transport.git
+https://github.com/ros-perception/point_cloud_transport_plugins.git
